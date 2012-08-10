@@ -89,6 +89,12 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers \
     PhaseBeam
 
+# DSPManager
+PRODUCT_PACKAGES += \
+    DSPManager \
+    libcyanogen-dsp \
+    audio_effects.conf
+
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \

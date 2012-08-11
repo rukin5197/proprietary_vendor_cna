@@ -95,6 +95,11 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers \
     PhaseBeam
 
+# Extra Optional packages
+PRODUCT_PACKAGES += \
+    Trebuchet \
+    Torch
+
 # DSPManager
 PRODUCT_PACKAGES += \
     DSPManager \

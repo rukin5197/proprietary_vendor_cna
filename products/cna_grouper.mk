@@ -1,7 +1,7 @@
 $(call inherit-product, device/asus/grouper/full_grouper.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/cna/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/cna/config/common_full_hybrid_wifionly.mk)
 
 PRODUCT_COPY_FILES +=  \
     vendor/cna/prebuilt/nexus7/bootanimation.zip:system/media/bootanimation.zip

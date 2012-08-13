@@ -1,5 +1,3 @@
-PRODUCT_PACKAGE_OVERLAYS += vendor/cna/overlay/tablet
-
 # Inherit common stuff
 $(call inherit-product, vendor/cna/config/common.mk)
 

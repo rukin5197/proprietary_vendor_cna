@@ -97,8 +97,7 @@ PRODUCT_PACKAGES += \
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-    Trebuchet \
-    Torch
+    Trebuchet
 
 # DSPManager
 PRODUCT_PACKAGES += \

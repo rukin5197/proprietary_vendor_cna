@@ -10,12 +10,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false
 
-# Backup Tool
-PRODUCT_COPY_FILES += \
-    vendor/cna/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/cna/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/cna/prebuilt/common/bin/50-cna.sh:system/addon.d/50-cna.sh
-
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/cna/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \

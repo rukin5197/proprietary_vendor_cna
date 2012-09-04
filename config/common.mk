@@ -97,8 +97,7 @@ PRODUCT_PACKAGES += \
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-    Trebuchet \
-    FileManager
+    Trebuchet
 
 # Extra tools
 PRODUCT_PACKAGES += \

@@ -118,6 +118,10 @@ ifdef CNA_NIGHTLY
 else
     ifdef CNA_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
+            ro.goo.developerid=codenamedroid \
+            ro.goo.rom=CodenameAndroid \
+            ro.goo.version=3.6.0 \
+            ro.rommanager.developerid=codenamedroid \
             ro.cnaversion=Codename-Android-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)
     else
         PRODUCT_PROPERTY_OVERRIDES += \

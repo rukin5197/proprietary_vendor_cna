@@ -100,6 +100,20 @@ PRODUCT_PACKAGES += \
     mke2fs \
     tune2fs
 
+# Openssh
+PRODUCT_PACKAGES += \
+    scp \
+    sftp \
+    ssh \
+    sshd \
+    sshd_config \
+    ssh-keygen \
+    start-ss
+
+# rsync
+PRODUCT_PACKAGES += \
+    rsync
+
 PRODUCT_PACKAGE_OVERLAYS += vendor/cna/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/cna/overlay/common
 

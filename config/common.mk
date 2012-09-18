@@ -115,7 +115,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JRO03L
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=codenamedroid \
     ro.goo.developerid=codenamedroid \
-    ro.goo.board=$(PRODUCT_DEVICE)
+    ro.goo.board=$(TARGET_PRODUCT)
 
 ifdef CNA_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \

@@ -112,32 +112,27 @@ PRODUCT_VERSION_MAINTENANCE = 0
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JRO03L
 
-ifdef CNA_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.cnaversion=Codename-Android-$(PRODUCT_VERSION_MAJOR)-NIGHTLY-$(shell date +%m%d%Y)
-else
-    ifdef CNA_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.goo.developerid=codenamedroid \
-            ro.goo.rom=CodenameAndroid \
-            ro.goo.version=3.6.0 \
-            ro.rommanager.developerid=codenamedroid \
-            ro.cnaversion=Codename-Android-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.cnaversion=Codename-Android-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-UNOFFICIAL
-    endif
-endif
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.rommanager.developerid=codenamedroid \
+    ro.goo.developerid=codenamedroid \
+    ro.goo.board=$(PRODUCT_DEVICE)
 
 ifdef CNA_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
+        ro.goo.rom=NIGHTLY \
+        ro.goo.version=$(shell date +%m%d%Y) \
+        ro.cnaversion=Codename-Android-$(PRODUCT_VERSION_MAJOR)-NIGHTLY-$(shell date +%m%d%Y) \
         ro.modversion=Codename-Android-$(PRODUCT_VERSION_MAJOR)-NIGHTLY-$(shell date +%m%d%Y)-$(PRODUCT_RELEASE_NAME)
 else
     ifdef CNA_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
+            ro.goo.rom=CodenameAndroid \
+            ro.goo.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE) \
+            ro.cnaversion=Codename-Android-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC) \
             ro.modversion=Codename-Android-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(PRODUCT_RELEASE_NAME)
     else
         PRODUCT_PROPERTY_OVERRIDES += \
+            ro.cnaversion=Codename-Android-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-UNOFFICIAL \
             ro.modversion=Codename-Android-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(PRODUCT_RELEASE_NAME)-UNOFFICIAL
     endif
 endif

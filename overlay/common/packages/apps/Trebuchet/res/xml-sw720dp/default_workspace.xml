@@ -18,18 +18,10 @@
     <!-- Far-left screen [0] -->
 
     <!-- Left screen [1] -->
-    <appwidget
-        launcher:packageName="com.android.settings"
-        launcher:className="com.android.settings.widget.SettingsAppWidgetProvider"
-        launcher:screen="1"
-        launcher:x="0"
-        launcher:y="3"
-        launcher:spanX="4"
-        launcher:spanY="1" />
 
     <!-- Middle screen [2] -->
     <appwidget
-        launcher:packageName="com.android.deskclock"
+        launcher:packageName="com.android.alarmclock"
         launcher:className="com.android.alarmclock.AnalogAppWidgetProvider"
         launcher:screen="2"
         launcher:x="1"
@@ -97,28 +89,8 @@
     </folder>
 
     <!-- Right screen [3] -->
-    <appwidget
-        launcher:x="1"
-        launcher:y="1"
-        launcher:screen="3"
-        launcher:spanX="2"
-        launcher:spanY="2"
-        launcher:packageName="com.android.vending"
-        launcher:className="com.android.vending.MarketWidgetProvider" />
 
-    <favorite
-        launcher:x="1"
-        launcher:screen="3"
-        launcher:y="3"
-        launcher:packageName="com.android.gallery3d"
-        launcher:className="com.android.gallery3d.app.Gallery" />
-
-    <favorite
-        launcher:packageName="com.android.settings"
-        launcher:screen="3"
-        launcher:y="3"
-        launcher:x="2"
-        launcher:className="com.android.settings.Settings" />
+    <!-- Far-right screen [4] -->
 
     <favorite
         launcher:screen="0"
@@ -149,8 +121,7 @@
         launcher:screen="4"
         launcher:x="4"
         launcher:container="-101"
-        launcher:packageName="com.google.android.browser"
+        launcher:packageName="com.android.browser"
         launcher:className="com.android.browser.BrowserActivity" />
 
-    <!-- Far-right screen [4] -->
 </favorites>

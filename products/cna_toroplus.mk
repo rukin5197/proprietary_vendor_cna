@@ -12,7 +12,7 @@ PRODUCT_COPY_FILES +=  \
 # Release name
 PRODUCT_RELEASE_NAME := GN-SPR
 
-PRODUCT_BUILD_PROP_OVERRIDES +=  PRODUCT_NAME=mysidspr BUILD_FINGERPRINT="samsung/mysidspr/toroplus:4.0.4/IMM76D/L700FD02:user/release-keys" PRIVATE_BUILD_DESC="mysidspr-user 4.0.4 IMM76D L700FD02 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysidspr BUILD_FINGERPRINT="samsung/mysidspr/toroplus:4.1.1/JRO03U/L700FH05:user/release-keys" PRIVATE_BUILD_DESC="mysidspr-user 4.1.1 JRO03U L700FH05 release-keys"
 
 PRODUCT_NAME := cna_toroplus
 PRODUCT_DEVICE := toroplus

@@ -16,4 +16,3 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cna_d2usc.mk \
     $(LOCAL_DIR)/cna_d2vzw.mk \
     $(LOCAL_DIR)/cna_i9300.mk
-
